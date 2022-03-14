@@ -1,5 +1,4 @@
-.navbar:hover {
-}
+/* general */
 
 li {
   display: inline;
@@ -76,16 +75,159 @@ header {
   font-size: x-large;
 }
 
-.container {
-  width: 50%;
+@media screen and (min-width: 900px) {
+  .imgleft {
+    position: fixed;
+    align-self: left;
+    margin-left: 4%;
+    margin-right: 96%;
+  }
+
+  .imgright {
+    position: fixed;
+    align-self: right;
+    margin-right: 15%;
+    margin-left: 85%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .imgleft {
+    position: fixed;
+    align-self: left;
+    margin-top: 10%;
+    margin-left: 2px;
+  }
+
+  .imgright {
+    position: fixed;
+    align-self: right;
+    margin-top: 10%;
+    margin-right: 25%;
+    margin-left: 75%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .imgleft {
+    position: fixed;
+    align-self: left;
+    margin-top: 25%;
+    margin-left: 0.01%;
+    margin-right: 99.99%;
+  }
+
+  .imgright {
+    position: fixed;
+    align-self: right;
+    margin-top: 25%;
+    margin-left: 75%;
+    margin-right: 25%;
+  }
+}
+
+/* projects */
+
+@media screen and (min-width: 900px) {
+  .containerproj {
+    width: auto;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+
+    font-family: monospace, "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .containerproj {
+    padding: 20px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: monospace, "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .containerproj {
+    padding: 20px;
+    width: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-family: monospace, "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}
+
+p {
+  margin-bottom: 70px;
+}
+
+h3 {
   text-align: center;
-  display: inline-block;
-  margin: 25%;
-  margin-top: 40px;
-  padding: auto;
+}
+
+.box1 {
+  text-align: left;
+  padding: 5px;
   font-family: monospace, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+.box2 {
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: monospace, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* previous work */
+
+.aboutme {
+  border-radius: 50%;
+}
+
+.aboutme1 {
+  border-radius: 25%;
+}
+
+@media screen and (min-width: 900px) {
+  .resumeimage {
+    text-align: center;
+    margin: 25%;
+    margin-top: 60px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .resumeimage {
+    text-align: center;
+    margin: 60px;
+    margin-top: 60px;
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resumeimage {
+    text-align: center;
+    margin: 40px;
+    margin-top: 60px;
+
+    height: auto;
+    max-width: 80%;
+  }
+}
+
+/* contact */
 
 @media screen and (min-width: 900px) {
   .containercontact {
@@ -145,41 +287,15 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-p {
-  margin-bottom: 70px;
-}
+/* about me */
 
-.aboutme {
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 900px) {
-  .resumeimage {
-    text-align: center;
-    margin: 25%;
-    margin-top: 60px;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-width: 600px) {
-  .resumeimage {
-    text-align: center;
-    margin: 25%;
-    margin-top: 60px;
-    max-width: 70%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .resumeimage {
-    text-align: center;
-    margin: 25%;
-    margin-top: 60px;
-
-    height: auto;
-    max-width: 80%;
-  }
+.container {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  margin: 25%;
+  margin-top: 40px;
+  padding: auto;
+  font-family: monospace, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
